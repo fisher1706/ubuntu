@@ -1,0 +1,10 @@
+total 48
+drwxr-xr-x   9 olehlazeba  staff   288 Feb 13 20:45 .
+drwxr-xr-x  22 olehlazeba  staff   704 Feb 13 18:09 ..
+drwxr-xr-x  12 olehlazeba  staff   384 Feb 13 20:30 .git
+drwxr-xr-x   9 olehlazeba  staff   288 Feb 13 20:44 .idea
+-rw-r--r--   1 olehlazeba  staff  8837 Feb 13 18:36 1.txt
+-rw-r--r--   1 olehlazeba  staff     8 Feb 13 20:25 2.txt
+-rw-r--r--   1 olehlazeba  staff    16 Feb 13 20:27 3.txt
+-rw-r--r--   1 olehlazeba  staff   916 Feb 13 20:45 README.md
+-rw-r--r--   1 olehlazeba  staff     0 Feb 13 20:45 helper.txt
