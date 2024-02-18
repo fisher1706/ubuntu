@@ -1,0 +1,5 @@
+/etc//bashrc_Apple_Terminal
+/etc//shells
+/etc//bashrc
+/etc//profile
+/etc//passwd

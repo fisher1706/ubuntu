@@ -1,5 +1,8 @@
 # https://www.youtube.com/watch?v=K8W4VUJQdX4&list=PLYl91BhaOf-kkXWweBzgOw555he6S7SUs&index=2
 
+# additional lick -> more about bash
+# https://www.youtube.com/watch?v=ZVHx6zKXGc0&list=PLisqB92_b4TnsWzfIHTTqkso-rXQIkPFv&index=2
+
 
 # ELF - executable file
 # /etc/fstab - data about connected devices
@@ -9,15 +12,19 @@
 # "install" file - *.deb
 # /din - *.deb files
 
+# -----------------------------COMMAND LINE-----------------------------------------------------------------------------
 
-# -----------------------------COMMAND LINE-----------------------------
+# name of so system
+```shell
+uname -a
+```
 
 # name of current user
 ```shell
 whoami
 ```
 
-# where i am
+# where I am
 ```shell
 pwd
 ```
@@ -42,7 +49,7 @@ less 1.txt
 ls --help | more
 ```
 
-# instruction about command or "ls --help"
+# instruction about command or "ls --help" or "info ls" -> number in help - number of section
 ```shell
 man ls
 ```
@@ -83,7 +90,7 @@ cat 1.txt && echo "READ!"
 cat 6.txt || echo "FAIL!"
 ```
 
-# see history of actions -> history 10 -> show past 10 commands
+# see history of actions -> history 10 -> show past 10 commands -> !10 - run command 10 -> !! - run last command
 ```shell
 history
 ```
@@ -163,8 +170,33 @@ sudo -i
 exit
 ```
 
+# data about all dir
+```shell
+man hier
+```
 
-# -----------------------------MOUNT DISKS-----------------------------
+# to see free place on disks
+```shell
+df -h
+```
+
+
+# -----------------------------INPUT/OUTPUT-----------------------------------------------------------------------------
+# 1. stdin - input <
+# 2. stdout - output >
+# 3. stderr - error 2>
+
+# stdout - to "grep_file.txt" -> stderr - to "error_grep_file.xtx"
+```shell
+grep -rl bash /etc/ > grep_file.txt 2> error_grep_file.xtx
+```
+
+# stdout and stderr - to "all_data.xtx"
+```shell
+ls 1.txt 2.txt 20.txt &> all_data.xtx
+```
+
+# -----------------------------MOUNT DISKS------------------------------------------------------------------------------
 
 # mount disk to dir "ubuntu" - on "root" user -> mount -r -> "read only"
 ```shell
