@@ -238,5 +238,171 @@ dpkg -i sudo_1.9.9-1ubuntu2.4_amd64.deb
 # delete packages "sudo" by dpkg - "remove" - delete package -> "perch" - delete dependencies
 ```shell
 dpkg --remove sudo
-dpkg --perch sudo
+dpkg --purge sudo
+```
+
+# install "sudo" by apt -> try to find data in: /etc/apt/sources.list
+```shell
+apt install sudo 
+```
+
+# search data about package -> for example "sudo"
+```shell
+apt search sudo
+```
+
+# get all data about package -> for example "sudo"
+```shell
+apt show sudo
+```
+
+# apt -get == apt
+
+# get data about possibility update packages -> to see detail information -> apt list --upgradable
+```shell 
+apt list --upgradable 
+```
+
+# update packages -> update packages within the version of package
+```shell
+apt upgrate
+```
+
+# update packages -> install new versions of packages
+```shell
+apt full-upgrate
+```
+
+# delete package and dependencies
+```shell
+apt remove sudo
+apt purge sudo
+```
+
+# "Have you mooed today"
+```shell
+apt moo
+```
+
+# ------------------------------------USERS-----------------------------------------------------------------------------
+
+# get data about all users
+```shell
+cat /etc/passwd
+```
+
+# get data about one user -> for example "ubuntu"
+```shell
+getent passwd ubuntu 
+```
+
+# to show where data is found about user, group ...
+```shell
+cat /etc/nsswitch.conf
+```
+
+# add user "alex"
+```shell
+useradd alex
+```
+
+# set password for "alex" -> enter password
+```shell
+passwd alex
+```
+
+# create home dir for "alex"
+```shell
+mldir /home/alex
+```
+
+# switch to user "alex"
+```shell
+su - alex
+```
+
+# add user "alex_two" with parameters
+```shell
+useradd alex_to -m -d /home/alex_to -k /home/ubuntu -s /bin/bash
+```
+
+# create user "fisher" (like apt):
+```shell
+adduser fisher
+```
+
+# update user -> -d - change home dir -> -m move home dir -> -l -> set new user_name -> -s /bin/bash  
+```shell
+usermood fisher -l vova
+```
+
+# delete user "fisher" and all data about "fisher"
+```shell
+userdell -r fisher
+```
+
+# ----------------------------------------GROUP-------------------------------------------------------------------------
+
+# to see all data about group
+```shell
+cat /etc/group
+```
+
+# to all data about group "ubuntu"
+```shell
+groups ubuntu
+```
+
+# add group "fisher"
+```shell
+addgropu fisher
+```
+
+# switch user "fisher" to other group "ubuntu"
+```shell
+usermod fisher -g ubuntu
+```
+
+# add second groups for user "fisher" -> G - "cdrom", "audio"
+```shell
+usermod fisher -G cdrom, audio
+```
+
+# add groups for user "fisher" to "second" ("test", "zapel") groups -> [-a -G]
+```shell
+usermod fisher -a -G test, zapel
+```
+
+# delete group "cdrom" -> if main group has same user -> can not delete group
+```shell
+dellgroup cdrom
+```
+
+# -----------------------------USER CONFIGURATIONS----------------------------------------------------------------------
+
+# user configuration "fisher" -> user "fisher" can not login
+```shell
+usermod fisher -s /bin/false
+# OR
+usermod fisher -s /sbin/nologin
+```
+
+# block user "fisher"
+```shell
+usermod -L fisher
+```
+
+# unblock user "fisher"
+```shell
+usermod -U fisher
+```
+
+# set expire data for user "fisher"
+```shell
+usermod fisher -e 2022-12-20
+```
+
+# get data about user "fisher"
+```shell
+chage -l fisher
 ```
