@@ -210,7 +210,7 @@ umount /home/ubuntu/
 # "target is busy" -> go out from current dir
 
 
-# -----------------------------INSTALL PACKAGES-----------------------------
+# -----------------------------INSTALL PACKAGES-------------------------------------------------------------------------
 
 # dpkg - data about all installed packages - dpkg --list apt -> data about "apt" - dpkg --status apt -> see status "apt"
 ```shell
@@ -405,4 +405,14 @@ usermod fisher -e 2022-12-20
 # get data about user "fisher"
 ```shell
 chage -l fisher
+```
+
+# to device connected by usd
+```shell
+lsusb
+```
+
+# check service ADB
+```shell
+adb devices
 ```
