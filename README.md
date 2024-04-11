@@ -416,3 +416,48 @@ lsusb
 ```shell
 adb devices
 ```
+
+
+УБИТЬ СИСТЕМУ
+
+1. rm –rf / - Удаляет всё, до чего только может добраться
+
+2. sudo dd if=/dev/zero of=/dev/sda bs=8m - Заполняет начальные 40Мбайт (8m) жесткого диска 
+   которые содержат важные данные структуры нулями. Что делает невозможным их восстановление и приводит к невозможности загрузки ОС
+
+3. shred /dev/sda - Удалит все данные на жёстком диске
+
+4. mkfs.ext3 /dev/sda - Форматирование жесткого диска
+
+5. chmod -Rv 000 / - Отнимает все разрешения на все файлы и все папки в системе
+
+6. chown -R nobody:nobody / - Меняет владельца всех файлов и папок системы на “никого” 
+
+7. :(){ :|:& };: - Логическая бомба (известная также как fork bomb), забивающая память системы, что в итоге приводит к её зависанию
+
+
+ПЕРЕГРУЗИТЬ СЕТЬ
+
+1. sudo service network-manager restart
+
+2. sudo systemctl restart NetworkManager.service
+
+3. sudo nmcli networking off/sudo nmcli networking on
+
+ПОРТЫ
+
+1. sudo netstat –tulpn
+
+2. sudo ss -tulpn
+
+3. sudo watch netstat -tulpn/sudo watch ss -tulpn - для просмотра портов TCP и UDP в режиме реального
+
+КОМАНДЫ
+
+1. cut < group.txt -d":" -f1 - выводит данные из group.txt в консоль
+
+2. ls | grep group - вывод в косоль + фильтрация по group
+
+3. bc <<< "2*2" - посчитает "2 * 2", bc - калькулятор, "<<<" - передает данные на стандартный ввод
+
+4. touch test.txt || echo fail
