@@ -417,6 +417,11 @@ lsusb
 adb devices
 ```
 
+# to see wich process used port [8080]
+```shell
+sudo lsof -nP -i:8080
+
+```
 
 УБИТЬ СИСТЕМУ
 
