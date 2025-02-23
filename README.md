@@ -46,7 +46,8 @@ less 1.txt
 
 # read big file by part (found "a" /a in file) quit - "q"
 ```shell
-ls --help | more
+#ls --help | more
+ls --help | less
 ```
 
 # instruction about command or "ls --help" or "info ls" -> number in help - number of section
@@ -77,7 +78,7 @@ cat helper.txt
 
 # find some data from file -> find "total" in 1.txt
 ```shell
-grep total 1.txt
+grep total <1.txt
 ```
 
 # IF-THEN
@@ -98,6 +99,11 @@ history
 # data about file
 ```shell
 file 1.txt
+```
+
+# example ls with some filter
+```shell
+ls *.txt
 ```
 
 # create file with certain date

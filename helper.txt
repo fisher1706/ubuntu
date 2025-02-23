@@ -1,10 +1,22 @@
-total 48
-drwxr-xr-x   9 olehlazeba  staff   288 Feb 13 20:45 .
-drwxr-xr-x  22 olehlazeba  staff   704 Feb 13 18:09 ..
-drwxr-xr-x  12 olehlazeba  staff   384 Feb 13 20:30 .git
-drwxr-xr-x   9 olehlazeba  staff   288 Feb 13 20:44 .idea
--rw-r--r--   1 olehlazeba  staff  8837 Feb 13 18:36 1.txt
--rw-r--r--   1 olehlazeba  staff     8 Feb 13 20:25 2.txt
--rw-r--r--   1 olehlazeba  staff    16 Feb 13 20:27 3.txt
--rw-r--r--   1 olehlazeba  staff   916 Feb 13 20:45 README.md
--rw-r--r--   1 olehlazeba  staff     0 Feb 13 20:45 helper.txt
+total 96
+drwxrwxr-x  6 oleg oleg 4096 апр 29 20:18 .
+drwxrwxr-x 15 oleg oleg 4096 апр 26 14:15 ..
+-rw-rw-r--  1 oleg oleg    8 апр 22 16:28 10.txt
+-rw-rw-r--  1 oleg oleg 8837 апр 22 16:28 1.txt
+-rw-rw-r--  1 oleg oleg    0 апр 22 16:28 2.txt
+-rw-rw-r--  1 oleg oleg   24 апр 22 16:28 3.txt
+-rw-rw-r--  1 oleg oleg 8837 апр 22 16:28 4.txt
+-rw-rw-r--  1 oleg oleg    0 апр 22 16:28 all_data.xtx
+-rw-rw-r--  1 oleg oleg  862 апр 22 16:28 error_grep_file.xtx
+drwxrwxr-x  8 oleg oleg 4096 апр 22 16:28 .git
+-rw-rw-r--  1 oleg oleg 3099 апр 22 16:28 .gitignore
+-rw-rw-r--  1 oleg oleg   81 апр 22 16:28 grep_file.txt
+-rw-rw-r--  1 oleg oleg    0 апр 29 20:25 helper.txt
+drwxrwxr-x  3 oleg oleg 4096 апр 29 18:49 .idea
+lrwxrwxrwx  1 oleg oleg    5 апр 22 16:28 link_to_file -> 1.txt
+drwxrwxr-x  2 oleg oleg 4096 апр 22 16:28 linux_command
+-rw-rw-r--  1 oleg oleg    0 апр 22 16:28 new_file.txt
+-rw-rw-r--  1 oleg oleg 8164 апр 22 16:28 passwd
+-rw-rw-r--  1 oleg oleg 8164 апр 22 16:28 passwd_link
+-rw-rw-r--  1 oleg oleg 9467 апр 29 20:18 README.md
+drwxrwxr-x  4 oleg oleg 4096 апр 29 19:16 .venv
